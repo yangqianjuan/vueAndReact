@@ -16,7 +16,7 @@
 ![image text](./vuelifecycle.png)
 ![image text](./vue3.png)
 
-## 3.3.类式的组件写法，还是声明式的写法
+## 3.类式的组件写法，还是声明式的写法
 ### react是类式的写法，api很少
 ![image text](./react2.png)
 
