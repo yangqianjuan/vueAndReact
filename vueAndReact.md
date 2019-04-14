@@ -1,7 +1,7 @@
 # vue and react 简单对比
 ## 1.数据改变方面
 
-### react整体是函数式的思想，把组件设计成纯组件，状态和逻辑通过参数传入，所以在react中，是单向数据流，推崇结合immutable(https://www.jianshu.com/p/0fa8c7456c15)来实现数据不可变。react在setState之后会重新走渲染的流程，如果shouldComponentUpdate返回的是true，就继续渲染，如果返回了false，就不会重新渲染，PureComponent就是重写了shouldComponentUpdate，然后在里面作了props和state的浅层对比。
+### react整体是函数式的思想，把组件设计成纯组件，状态和逻辑通过参数传入，所以在react中，是单向数据流，推崇结合immutable来实现数据不可变。react在setState之后会重新走渲染的流程，如果shouldComponentUpdate返回的是true，就继续渲染，如果返回了false，就不会重新渲染，PureComponent就是重写了shouldComponentUpdate，然后在里面作了props和state的浅层对比。
 ![Image text](./reactlifecycle.jpg)
 
 ### vue的思想是响应式的，也就是基于是数据可变的，通过对每一个属性建立Watcher来监听，当属性变化的时候，响应式的更新对应的虚拟dom。
@@ -37,7 +37,7 @@
 React刚开始也有mixin的写法，通过React.createClass的api，不过现在很少用了。
 Vue也不是不能实现高阶组件，只是特别麻烦，因为Vue对与组件的option做了各种处理，想实现高阶组件就要知道每一个option是怎么处理的，然后正确的设置。具体有多复杂，可以参考下面的文章。
 http://hcysun.me/2018/01/05/%E6%8E%A2%E7%B4%A2Vue%E9%AB%98%E9%98%B6%E7%BB%84%E4%BB%B6/
-优劣势：https://www.cnblogs.com/eyunhua/p/6535038.html
+- 优劣势：https://www.cnblogs.com/eyunhua/p/6535038.html
 
 ## 4.什么功能内置，什么交给社区去做
 
